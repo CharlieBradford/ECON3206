@@ -1,0 +1,96 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+% \usepackage{stmaryrd}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xfrac}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{changepage}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\lstset{language=C}
+\usepackage[latin1]{inputenc}
+
+\newcommand{\miniitem}[1]{\begin{itemize}\item #1\end{itemize}}
+
+\newenvironment{redmatrix}
+  {\left(\array{@{}rrr|c@{}}}
+  {\endarray\right)}
+\newenvironment{ropmatrix}
+  {\array{@{}c@{}}}
+  {\endarray}
+\newcommand\opone[2]{\xrightarrow{(#1)\times r_#2}}
+\newcommand\optwo[3]{\xrightarrow{r_#1{}-{} #2r_#3}}
+
+\newcommand{\ansline}{\begin{center}\rule{8cm}{0.4pt}\end{center}}
+
+
+
+\setlength\parindent{0pt}
+
+\setlist[description]{leftmargin=1cm,labelindent=1cm}
+
+\title{ECON3206 Notes}
+\author{Charlie Bradford}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section*{Schedule}
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{XXXX}
+\toprule\toprule
+\textbf{Week} & \textbf{Topic} & \textbf{Reading} & \textbf{Assessment} \\\midrule
+\multirow{2}{*}{1} & Introduction & Chapter 1\&{}2 & \\\cmidrule{2-4}
+\addlinespace
+& Linear Regression Model and Financial Data & Chapter 3\&{}5 &\\
+\addlinespace\midrule
+\multirow{2}{*}{2} & Linear Regression Model and Financial Data & Chapter 6.3-6.7, 6.11-6.12 &\\\cmidrule{2-4}
+& Univariate Time Series Analysis: Estimation & Chapter 6.8 \\\midrule
+3 & Univariate Time Series Analysis: Forecasting with ARMA & Chapter 6.11-6.12, 9.9 & Assignment 1 \\\midrule
+4 & Non-stationary Time Series & Chapter 8.1-8.3 & \\\midrule
+5 & No Lecture & & \\\midrule
+6 & Long-run relationships: Cointegration and error correction models & 8.4-8.7 & \\\midrule
+7 &  Risk and volatility Analysis: ARCH/GARCH/EGARCH/GJR & Chapter 9.2-9.10, 9.13 & Assignment 2 \\\midrule
+8 & Risk and volatility Analysis: ARCH/GARCH/EGARCH/GJR & Chapter 9.12-9.15, 9.20 & \\\midrule
+9 & Panel Data Modelling & Chapter 11 & \\\midrule
+10 & No Lecture & & Group Project 7/8 \\\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Introduction}
+
+\section{Linear Regression Model and Financial Data}
+
+\section{Univariate Time Series Analysis}
+\subsection{Estimation}
+\subsection{Forecasting with ARMA}
+
+\section{Non-Stationary Time Series}
+
+\section{Long Run Relationships}
+\subsection{Cointegration Models}
+\subsection{Error Correction Models}
+
+\section{Risk and Volatility Analysis}
+\subsection{ARCH}
+\subsection{GARCH}
+\subsection{EGARCH}
+\subsection{GJR}
+
+\section{Panel Data Modelling}
+
+
+
+
+
+\end{document}
